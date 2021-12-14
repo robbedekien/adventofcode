@@ -33,6 +33,6 @@ const testInput = fs
 const testResult = calculateIncreased(testInput);
 console.log("Results test input:", testResult);
 
-// Solving test
+// Solving puzzle
 const result = calculateIncreased(input);
 console.log("Results puzzle input:", result);

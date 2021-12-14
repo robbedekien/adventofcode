@@ -40,6 +40,6 @@ const testInput = fs.readFileSync("day2/testinput.txt").toString().split("\n");
 const testResult = processSteps(testInput);
 console.log("Results test input:", testResult);
 
-// Solving test
+// Solving puzzle
 const result = processSteps(input);
 console.log("Results puzzle input:", result);

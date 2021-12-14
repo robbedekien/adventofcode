@@ -46,6 +46,6 @@ const testInput = fs
 const testResult = calculateWindowIncreases(testInput);
 console.log("Results test input:", testResult);
 
-// Solving test
+// Solving puzzle
 const result = calculateWindowIncreases(input);
 console.log("Results puzzle input:", result);

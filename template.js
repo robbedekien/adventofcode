@@ -13,6 +13,6 @@ const testInput = fs.readFileSync("dayN/testinput.txt").toString().split("\n");
 const testResult = method(testInput);
 console.log("Results test input:", testResult);
 
-// Solving test
+// Solving puzzle
 const result = method(input);
 console.log("Results puzzle input:", result);
