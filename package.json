@@ -14,7 +14,9 @@
         "day4.1": "node day4/day4#1.js",
         "day4.2": "node day4/day4#2.js",
         "day5.1": "node day5/day5#1.js",
-        "day5.2": "node day5/day5#2.js"
+        "day5.2": "node day5/day5#2.js",
+        "day6.1": "node day6/day6#1.js",
+        "day6.2": "node --max-old-space-size=8192 day6/day6#2.js"
     },
     "repository": {
         "type": "git",
