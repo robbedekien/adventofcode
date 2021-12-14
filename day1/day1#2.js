@@ -1,14 +1,27 @@
-// Day 1 https://adventofcode.com/2021/day/1#
+// Day 1.2 https://adventofcode.com/2021/day/1#part2
 import fs from "fs";
 
 // Methods
-const calculateIncreased = (array) => {
+const calculateWindowIncreases = (array) => {
+  let previousSum = array[0] + array[1] + array[2];
+  let newSum;
+
   return array.reduce((total, number, index, array) => {
     if (index === 0) {
       return total;
     }
 
-    if (number > array[index - 1]) {
+    if (newSum) {
+      previousSum = newSum;
+    }
+
+    if (index > array.length - 3) {
+      return total;
+    }
+
+    newSum = number + array[index + 1] + array[index + 2];
+
+    if (newSum > previousSum) {
       return ++total;
     }
 
@@ -30,9 +43,9 @@ const testInput = fs
   .map((input) => parseInt(input));
 
 // Solving test
-const testResult = calculateIncreased(testInput);
+const testResult = calculateWindowIncreases(testInput);
 console.log("Results test input:", testResult);
 
 // Solving test
-const result = calculateIncreased(input);
+const result = calculateWindowIncreases(input);
 console.log("Results puzzle input:", result);
